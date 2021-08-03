@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: url("/static/images/home_img.jpg");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(221, 152, 215, 0.6);
+}
+
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 150px 150px 80px;
+  grid-template-areas: "image" "text";
+  border-radius: 18px;
+  background: rgb(255, 255, 255);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 30px;
+  opacity: 0.6
+}
+
+.card-image {
+  grid-area: image;
+  background: url("/static/images/default.JPG");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-image-2 {
+  grid-area: image;
+  background: url("/static/images/creditscore.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 10px;
+}
+
+.card-text p {
+  color: rgb(3, 3, 3);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  
+}
+
+.card-text h3 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.row {
+  margin: 25px 50px 75px
+}
